@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi with Alaric</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .calendar-card {
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        .calendar-card:active {
+            transform: scale(0.98);
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-xs w-full space-y-4">
+        <!-- Header -->
+        <div class="text-center pb-2">
+            <h1 class="text-2xl font-bold text-gray-900">Kopi with Alaric</h1>
+        </div>
+
+        <!-- Buttons Container -->
+        <div class="grid gap-3">
+            <!-- Calendar 1: Even Week -->
+            <a href="https://calendar.app.google/drLaYLLCmsiNM7ms6" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="calendar-card flex items-center p-4 bg-white border border-gray-200 rounded-2xl shadow-sm hover:border-blue-500">
+                <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="text-left">
+                    <h2 class="text-base font-bold text-gray-800 leading-tight">Even Week</h2>
+                    <p class="text-xs text-gray-500">Tap to view schedule</p>
+                </div>
+            </a>
+
+            <!-- Calendar 2: Odd Week -->
+            <a href="https://calendar.app.google/qhH6oefTaNDujuRw7" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="calendar-card flex items-center p-4 bg-white border border-gray-200 rounded-2xl shadow-sm hover:border-emerald-500">
+                <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="text-left">
+                    <h2 class="text-base font-bold text-gray-800 leading-tight">Odd Week</h2>
+                    <p class="text-xs text-gray-500">Tap to view schedule</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center opacity-40 grayscale flex justify-center pt-2">
+            <svg class="h-4 w-4 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+            <span class="text-[10px] uppercase tracking-widest font-semibold">Google Calendar</span>
+        </div>
+    </div>
+
+</body>
+</html>
